@@ -1,4 +1,10 @@
 terraform {
+  backend "remote" {
+    organization = "cbsi-vde-proto"
+    workspaces {
+      prefix = "sample-injest-stack-"
+    }
+  }
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
