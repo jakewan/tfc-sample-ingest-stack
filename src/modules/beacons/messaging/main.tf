@@ -1,3 +1,3 @@
-resource "azurerm_eventhub" {
+resource "azurerm_eventhub" "eventhub_1" {
 
 }
