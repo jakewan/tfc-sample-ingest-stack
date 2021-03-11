@@ -16,8 +16,8 @@ resource "azurerm_eventhub_namespace" "beacons" {
 
 resource "azurerm_eventhub" "name" {
   name                = "foo-${var.environment_name}"
-  location            = azurerm_resource_group.beacons.location
   resource_group_name = azurerm_resource_group.beacons.name
+  namespace_name      = azurerm_eventhub_namespace.beacons.name
   partition_count     = 2
   message_retention   = 1
 }
