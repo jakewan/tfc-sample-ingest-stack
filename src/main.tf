@@ -7,6 +7,6 @@ resource "azurerm_resource_group" "beacons" {
   location = "West US"
 }
 
-module "beacons_eventhubs" {
-  source = "./beacons_eventhubs"
+module "beacons_messaging" {
+  source = "./modules/beacons/messaging"
 }
