@@ -1,4 +1,4 @@
-# tfc-sample-injest-stack
+# tfc-sample-ingest-stack
 
 Composed of:
 
