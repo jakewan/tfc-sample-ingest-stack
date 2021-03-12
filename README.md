@@ -14,7 +14,7 @@ Since it is common to use the Terraform CLI alongside Terraform Cloud, Hashicorp
 
 See [Where Backends Are Used](https://www.terraform.io/docs/language/settings/backends/index.html#where-backends-are-used).
 
-## Terraform Cloud Worspace Configuration
+## Terraform Cloud Workspace Configuration
 
 A token should be chosen in order to uniquely name resources for a given environment. Usually this will have something to do with the feature being worked on. Specify this as a Terraform variable named `environment_name` in the Terraform Cloud UI. For example, if you're working on a git branch named `add-foo-feature`, then you might set this variable to `add-foo-feature` as well. We will discuss using Terraform Cloud workspaces to manage separate infrastructure environments more below.
 
